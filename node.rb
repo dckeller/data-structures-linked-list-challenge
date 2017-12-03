@@ -1,16 +1,8 @@
 class Node
-	attr_accessor :value, :node_after
 
-	def initialize(value, node_after)
+	def initialize(value, next_node)
 		@value = value
-		@node_after = node_after
+		@next_node = next_node || nil
 	end
 
-	def insert_after(other_node)
-
-	end
-
-	def remove_after()
-	end   
-
-end
+end 
