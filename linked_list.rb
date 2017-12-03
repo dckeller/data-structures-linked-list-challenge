@@ -24,3 +24,6 @@ class LinkedList
 
 end
 
+new_list = LinkedList.new
+new_list.insert_first(Node.new("First,", nil))
+p new_list
