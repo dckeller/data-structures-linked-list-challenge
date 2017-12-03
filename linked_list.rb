@@ -7,8 +7,9 @@ class LinkedList
 	end 
 
 	def insert_first(value)
-		if Node.next_node == nil
-			Node.new(value, nil)
+		index = 0
+		if @next_node == index
+			Node.new(value, index)
 		end
 	end
 
@@ -29,5 +30,4 @@ class LinkedList
 end
 
 new_list = LinkedList.new
-new_list.insert_first(Node.new("First", nil))
-p new_list
+p new_list.insert_first("First")
